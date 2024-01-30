@@ -44,7 +44,7 @@ def main():
         
         # Asking user for the filename
         try:
-            topic  = input('> Enter the Filename You want to save the conversation with or Press enter for auto file name generation :  ')
+            topic  = input(bold('> Enter your filename (or leave empty):  '))
             if not len(topic) >  0:
                 topic = time_stamp
             filename = f"./conversations/{topic}.txt"
